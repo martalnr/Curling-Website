@@ -1,0 +1,277 @@
+body {
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+/* HEADER NAVBAR */
+.navbar {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 10px 5%;
+}
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+}
+.title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    justify-content: flex-end;
+}
+.navlink {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    padding-right: 10%;
+}
+.navlink:hover {
+    background-color: white;
+    color: black;
+}
+
+/* P, HEADERS , LISTAS */
+p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-top: 8rem;
+}
+h2, h3 {
+    font-size: 1.8rem;
+    text-align: left;
+}
+.hcentrado {
+    text-align: center;
+}
+ul.nodot {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    text-align: left; 
+}
+
+/* CONTAINERS DIVS */
+/*engloba los diferentes bloques que tendrá*/
+.content-container {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    gap: 1.5rem;
+}
+
+/* Bloques */
+.bloque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px lightblue;
+    gap: 1.5rem;
+}
+/* Alineacion textos */ 
+.texto1 {
+    text-align: left; 
+    margin-right: 0; 
+    width: 100%; 
+}
+
+/* HOME: imágen y video */
+.img-vid {
+    height: 300px;
+    width: 600px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/*LINKS WEBS INTERÉS*/
+.webs-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px lightblue;
+}
+.links-paginas-interes {
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+}
+.links-paginas-interes ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.links-paginas-interes li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links-paginas-interes a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-web {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.linkswebs:hover {
+    background-color:lightblue;
+    border-radius: 5px;
+}
+
+/*FOTOS HISTORIA */
+.imagenes-container { /* contiene 3 fotos en historia */
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 20px;
+}
+.historia-foto { /* cada una de las fotos de historia */
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*TABLAS HISTORIA */ 
+.tablas-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.tabla-item {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+.pais {
+    background-color: aliceblue;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: black;
+    color: white;
+}
+
+/* Reglas imagenes */
+img.team {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* FORM APUNTATE */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px lightblue;
+    width: 300px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    background-color: grey;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    margin: 4rem 0;
+}
+
+/* LINK INICIO PAG */
+.inicio {
+    text-align: right;
+    margin-left: 0; /* Asegura que el margen izquierdo esté en 0 */
+    padding: 10px; /* Añade espacio interno si lo deseas */
+}
+
+/* FOOTER */
+.footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
